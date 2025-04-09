@@ -1,5 +1,5 @@
 import { LitElement, html, css, nothing, render } from 'lit';
-import { ScopedElementsMixin } from '@open-wc/scoped-elements';
+import { ScopedElementsMixin } from '@open-wc/scoped-elements/lit-element.js';
 import { LionAccordion } from '@lion/ui/accordion';
 
 import {
