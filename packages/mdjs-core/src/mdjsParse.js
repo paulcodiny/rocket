@@ -5,13 +5,13 @@ import { remove } from 'unist-util-remove';
 /** @typedef {import('unist').Node} Node */
 
 export function mdjsParse() {
-  let jsCode = '';
-
   /**
    * @param {Node} tree
    * @param {VFileOptions} file
    */
   function transformer(tree, file) {
+    let jsCode = '';
+
     visit(
       tree,
       'code',

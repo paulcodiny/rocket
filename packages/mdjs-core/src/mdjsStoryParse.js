@@ -54,7 +54,7 @@ export function mdjsStoryParse({
   previewStoryTag = defaultPreviewStoryTag,
 } = {}) {
   /** @type {Story[]} */
-  const stories = [];
+  let stories = [];
   let htmlIndex = 0;
 
   /* eslint-disable no-param-reassign */
@@ -181,13 +181,11 @@ export function mdjsStoryParse({
   async function transformer(tree, file) {
     // unifiedjs expects node changes to be made on the given node...
     await init;
+    stories = [];
     // @ts-ignore
     visit(tree, 'code', nodeCodeVisitor);
     // we can only return/modify the tree but stories should not be part of the tree
     // so we attach it globally to the file.data
-    if (!file.data) {
-      file.data = {};
-    }
     file.data.stories = stories;
 
     return tree;
