@@ -91,7 +91,7 @@ export class LayoutSimulator {
                 width: dimensions.width,
                 height: dimensions.height,
               };
-              parent.postMessage(JSON.stringify(data), '*');
+              parent.postMessage(data, '*');
             });
             observer.observe(document.body);
           </script>
