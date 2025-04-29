@@ -186,6 +186,9 @@ export function mdjsStoryParse({
     visit(tree, 'code', nodeCodeVisitor);
     // we can only return/modify the tree but stories should not be part of the tree
     // so we attach it globally to the file.data
+    if (!file.data) {
+      file.data = {};
+    }
     file.data.stories = stories;
 
     return tree;
