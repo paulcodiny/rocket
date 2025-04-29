@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.21.0
+
+### Minor Changes
+
+- 60e9eae5: Moved clearing of the variables to inside functions that process the MD files
+
 ## 0.20.0
 
 ### Minor Changes

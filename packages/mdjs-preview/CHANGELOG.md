@@ -1,5 +1,12 @@
 # @mdjs/mdjs-preview
 
+## 0.6.0
+
+### Minor Changes
+
+- 50c830c1: Pass serializable changes without using JSON to allow other postMessages 
+- 60e9eae5: Updated the dependencies to the latest versions
+
 ## 0.5.9
 
 ### Patch Changes

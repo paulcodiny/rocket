@@ -1,5 +1,11 @@
 # @mdjs/mdjs-story
 
+## 0.4.0
+
+### Minor Changes
+
+- 60e9eae5: Updated the dependencies to the latest versions
+
 ## 0.3.2
 
 ### Patch Changes
